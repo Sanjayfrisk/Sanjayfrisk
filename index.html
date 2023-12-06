@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .error{
+        color: red;
+      }
+      #captcha{
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+    </style>
+    <div>
+        <form id="form" name="myform">
+         
+            <label>Firstname*</label>
+            <input type="text" id="firstnameid" name="firstname"><br>
+            <span id="firsterror" class="error"></span>
+          <br>
+            <label >Lastname</label>
+            <input type="text" id="lastnameid" name="lastname"><br>
+            <span class="error" id="lasterror"></span>
+          <br>
+            <label>Age*</label>
+            <input type="text" id="ageid" name="age"><br>
+            <span class="error" id="ageerror"></span>
+            <br>
+            <label>Email*</label>
+            <input type="text" id="emailid" name="email"><br>
+            <span class="error" id="emailerror"></span>
+          <br>
+      
+          <div>
+            <label>Captcha*</label>
+            <span id="captcha"></span><br>
+            <button onlclick="captcharefresh()">refresh</button><br>
+            <input type="text" id="code">
+            <p class="error" id="captchaans"></p>
+          </div>
+          <button type="button" onClick="validateinput()">ok</button>
+          <p class="error" id="ferror" ></p>
+        </form>
+      </div>
+</head>
+<body>
+
+<script src=index.js></script>
+
+            
+</body>
+</html>
